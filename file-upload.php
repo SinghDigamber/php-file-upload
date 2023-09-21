@@ -16,7 +16,7 @@
 
         if (!file_exists($_FILES["fileUpload"]["tmp_name"])) {
            $resMessage = array(
-               "status" => "alert-danger",
+               "status" => "alert-info",
                "message" => "Select image to upload."
            );
         } else if (!in_array($imageExt, $allowd_file_ext)) {
